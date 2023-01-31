@@ -1,0 +1,61 @@
+﻿<Page x:Class="WpfWindowsStore.Pages.AppDetails"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfWindowsStore.Pages"
+      xmlns:uc="clr-namespace:WpfWindowsStore.UserControllers"
+      xmlns:ucappdet="clr-namespace:WpfWindowsStore.UserControllers.AppDetailsTabContent"
+      xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AppDetails">
+
+    <ScrollViewer Name="AppDetailsSV"
+                  HorizontalScrollBarVisibility="Hidden"
+                  VerticalScrollBarVisibility="Hidden"
+                  Background="#2E2E2E"
+    >
+        <!--TODO: Step 2: Add the main stack panel-->
+        <StackPanel Name="AppDetailsPageMainStackPanel"
+                    Orientation="Vertical"
+                    Width="{Binding ElementName=AppDetailsSV, Path=ActualWidth}"
+                    Background="#2E2E2E"
+                    Margin="0,0,0,15"
+        >
+            <!--TODO: Step 3: The UC created from previous chapter -->
+            <uc:AppDetailsTitleAndBackground x:Name="AppDetailsTitleAndBackgroundUC"/>
+            <!--TODO: Step 4: Add Tabs grid displayed below -->
+            <Grid Name="Tabs">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.15*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.70*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.15*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <!--TODO: Step 5: Add a tab control -->
+                <mah:MetroAnimatedSingleRowTabControl 
+                    Name="AppDetailsTabControl"
+                    Grid.Column="1"
+                    Background="#2E2E2E"
+                    HorizontalAlignment="Stretch"
+                >
+                    <!--TODO: Step 6: Add the tabs below 
+                    For now they're going to be empty 
+                    GOTO: MainWindow.xaml.cs to display this page -->
+                    <TabItem Header="Owerview">
+                        <ucappdet:OverView x:Name="OverviewTabUC"/>
+                    </TabItem>
+                    <TabItem Header="System Requirements">
+                        <ucappdet:SystemRequirements x:Name="SystemRequirementsTabUC"/>
+                    </TabItem>
+                    <TabItem Header="Reviews">
+                        <ucappdet:Reviews x:Name="ReviewsTabUC"/>
+                    </TabItem>
+                    <TabItem Header="Related">
+                        <ucappdet:Related x:Name="RelatedTabUC"/>
+                    </TabItem>
+                </mah:MetroAnimatedSingleRowTabControl>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="WpfWindowsStore.UserControllers.HamburgerMenuViews.HamburgerMenuHeader"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfWindowsStore.UserControllers.HamburgerMenuViews"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="720">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--TODO: Step 2: Add stack panel -->
+        <StackPanel 
+            Orientation="Horizontal"
+            Grid.Row="0"
+            >
+            <!--TODO: Step 3: Add sort by type Menu with Menu items -->
+            <Menu   Name="SortByTypeMenu"
+                    Margin="5"
+                    Width="350"
+                    HorizontalContentAlignment="Stretch"
+            >
+                <MenuItem Name="Types" Width="350">
+                    <MenuItem.Header>
+                        <!--TODO: Step 4: Add this grid here
+                        so it's easy to force the arrow to the left side -->
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.85*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.15*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Name="FilterByTypeLabel" Grid.Column="0" HorizontalAlignment="Left">All types</Label>
+                            <Label Grid.Column="1" HorizontalAlignment="Right">﹀</Label>
+                        </Grid>
+                    </MenuItem.Header>
+                    <!--TODO: Step 5: Add menu items with their respective click events-->
+                    <MenuItem Width="350"  Name="AllTypesMenuItem" Click="Filter_MenuItem_Click"  Header="All types" />
+                    <MenuItem Width="350"  Name="AppsMenuItem"     Click="Filter_MenuItem_Click"  Header="Apps"      />
+                    <MenuItem Width="350"  Name="GamesMenuItem"    Click="Filter_MenuItem_Click"  Header="Games"     />
+                    <MenuItem Width="350"  Name="MoviesMenuItem"   Click="Filter_MenuItem_Click"  Header="Movies"    />
+                    <MenuItem Width="350"  Name="AvetarsMenuItem"  Click="Filter_MenuItem_Click"  Header="Avatars"   />
+                </MenuItem>
+            </Menu>
+            <!--TODO: Step 6: Add sort by date Menu with Menu items 
+            basically the same as the above menu with less menu items 
+            GOTO: HamburgerMenuHeader.xaml.cs -->
+            <Menu   Name="SortByDateMenu"
+                    Margin="5"
+                    Width="350"
+                    HorizontalContentAlignment="Stretch"
+            >
+                <MenuItem 
+                    Name="SortBy"
+                    Width="350"
+                >
+                    <MenuItem.Header>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.85*"></ColumnDefinition>
+                                <ColumnDefinition Width="0.15*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Name="SortByLabel" HorizontalAlignment="Left">Sort by most recent</Label>
+                            <Label Grid.Column="1" HorizontalAlignment="Right">﹀</Label>
+                        </Grid>
+                    </MenuItem.Header>
+                    <MenuItem Name="SortByMostRecent" Click="SortBy_MenuItem_Click" Width="350" Header="Sort by most recent"></MenuItem>
+                    <MenuItem Name="SortByName"       Click="SortBy_MenuItem_Click" Width="350" Header="Sort by name"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+    </Grid>
+</UserControl>
