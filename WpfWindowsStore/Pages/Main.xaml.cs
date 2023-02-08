@@ -15,7 +15,6 @@ namespace WpfWindowsStore.Pages
         public delegate void OnAppClicked(AnApp sender, RoutedEventArgs e);
         public event OnAppClicked AppClicked;
 
-        //TODO: Step 15: Create event and delegate
         public delegate void OnTopAppButtonClicked(object sender, RoutedEventArgs e);
         public event OnTopAppButtonClicked TopAppButtonClicked;
 
@@ -60,8 +59,6 @@ namespace WpfWindowsStore.Pages
 
         private void TopApps_TopAppButtonClicked(object sender, RoutedEventArgs e)
         {
-            //TODO: Step 16: Fire the event forward
-            //GOTO: MainWindow.xaml.cs
             TopAppButtonClicked(sender, e);
         }
 
@@ -80,8 +77,6 @@ namespace WpfWindowsStore.Pages
 
         private void Page_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            //TODO: Step 5: Signal that mouse has been clicked somewhere outside
-            //of the header right buttons user control
             RightHeaderButtons.MouseDown_OutsideOfHeaderRightButtons();
         }
     }

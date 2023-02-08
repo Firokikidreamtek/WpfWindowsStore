@@ -8,8 +8,6 @@ namespace WpfWindowsStore
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-
-
     public partial class MainWindow : MetroWindow
     {
         private Main MainWindowContentPage;
@@ -30,11 +28,11 @@ namespace WpfWindowsStore
             MyTopAppsWrappedPage.BackButtonClicked += BackButtonClicked;
 
             DownloadsAndUpdatesPage = new DownloadsAndUpdates();
+            DownloadsAndUpdatesPage.BackButtonClicked += BackButtonClicked;
         }
 
         private void MainWindowContentPage_DownloadsAndUpdatesClicked()
         {
-            //TODO: Step 17: Set the content of the Main Frame to DownloadsAndUpdates
             MainWindowFrame.Content = DownloadsAndUpdatesPage;
         }
 
@@ -63,10 +61,6 @@ namespace WpfWindowsStore
 
         private void MainWindowFrame_Loaded(object sender, RoutedEventArgs e)
         {
-            //TODO: Step 15: Set the content to the newly created user control
-            //You can now run the app and see that the resolution is quite small
-            //For the content that we are displaying
-            //GOTO: MainWindow.xaml and change the height width of the window
             MainWindowFrame.Content = MainWindowContentPage;
         }
 

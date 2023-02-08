@@ -14,10 +14,6 @@
             HorizontalAlignment="Right" 
             Grid.Row="0" Grid.Column="0"
     >
-        <!--TODO: Step 2: Add grid -->
-        <!--Here it's neccesary to add a grid because we are displaying
-        a button when the control is not clicked and a text box when it 
-        is clicked -->
         <Grid Name="SearchMenuItemHeader" VerticalAlignment="Center">
             <Button 
                 Visibility="Visible" 
@@ -36,10 +32,8 @@
                 >
             </TextBox>
         </Grid>
-        <!--TODO: Step 3: Introduce Menu and Menu items -->
         <Menu Name="SignInMenu">
             <MenuItem Height="40" Width="48"  x:Name="SignInButton">
-                <!--TODO: Step 4: Add the sign in symbol to the header-->
                 <MenuItem.Header>
                     <Label 
                         VerticalAlignment="Center"
@@ -47,12 +41,10 @@
                         Content="👤"
                     />
                 </MenuItem.Header>
-                <!--TODO: Step 5: Add the two menu items -->
                 <MenuItem Header="Sign In"></MenuItem>
                 <MenuItem Header="Add work of school account"></MenuItem>
             </MenuItem>
         </Menu>
-        <!--TODO: Step 6: Add the download button with event -->
         <Button Name="DownloadButton"
                 Height="40" Width="35"  
                 Click="DownloadButton_Click"
@@ -64,8 +56,6 @@
                 Content="⤓"
             />
         </Button>
-        <!--TODO: Step 7: Add the last menu with menu items -->
-        <!--GOTO: Main.xaml -->
         <Menu Name="DotDotDotMenu" >
             <MenuItem Height="40" Width="35"  x:Name="DotDotDot">
                 <MenuItem.Header>

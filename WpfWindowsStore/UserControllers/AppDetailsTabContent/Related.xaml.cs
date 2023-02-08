@@ -20,9 +20,23 @@ namespace WpfWindowsStore.UserControllers.AppDetailsTabContent
     /// </summary>
     public partial class Related : UserControl
     {
+        public delegate void OnAppDetails_Clicked(AnApp sender, RoutedEventArgs e);
+        public event OnAppDetails_Clicked AppClicked;
+
         public Related()
         {
             InitializeComponent();
+            AppsViewer1.AppClicked += AppsViewerInsideOwerviewTab_AnAppClicked;
+            AppsViewer2.AppClicked += AppsViewerInsideOwerviewTab_AnAppClicked;
+            AppsViewer3.AppClicked += AppsViewerInsideOwerviewTab_AnAppClicked;
+            AppsViewer4.AppClicked += AppsViewerInsideOwerviewTab_AnAppClicked;
+            AppsViewer5.AppClicked += AppsViewerInsideOwerviewTab_AnAppClicked;
+
+        }
+
+        private void AppsViewerInsideOwerviewTab_AnAppClicked(AnApp sender, RoutedEventArgs e)
+        {
+            AppClicked(sender, e);
         }
     }
 }

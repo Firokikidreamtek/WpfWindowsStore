@@ -75,16 +75,6 @@
             Margin="2,2,2,2"
             MouseUp="Image_MouseUp"
         />
-        <!--TODO: Step 5: Canvas in neccesary for blurring the background
-        in order to display the app name in white
-        This canvas is overtop of the whole UC
-        Notice that the order in which we place elemetns is also important here
-        If this canvas was place at line 12 of this file then each element would
-        be on top of it. Thus, it would not blur anything.
-        As you suggested it is also important to mention the IsHitTestVisible 
-        property. This is what makes the canvas "transparent" from an events
-        point of view
-        -->
         <Canvas
             Grid.Column="0" Grid.Row="0"
             Grid.ColumnSpan="4"
@@ -93,7 +83,6 @@
             Background="#2E2E2E"
             IsHitTestVisible="False"
         />
-        <!--TODO: Step 6: Add the grid and label for the app image-->
         <Grid
             Grid.Column="0" Grid.Row="0"
             Grid.ColumnSpan="2"
@@ -115,7 +104,6 @@
                 Phtoshop
             </Label>
         </Grid>
-        <!--TODO: Step 7: Add the grid and label for the app image-->
         <Grid
             Grid.Column="0" Grid.Row="2"
         >
@@ -141,7 +129,6 @@
                 Snack
             </Label>
         </Grid>
-        <!--TODO: Step 8: Add the grid and label for the app image-->
         <Grid
             Grid.Column="1" Grid.Row="2"
         >
@@ -167,7 +154,6 @@
                 Watch
             </Label>
         </Grid>
-        <!--TODO: Step 9: Add the grid and label for the app image-->
         <Grid
             Grid.Column="2" Grid.Row="0"
             Grid.RowSpan="2"
@@ -189,7 +175,6 @@
                 Finance
             </Label>
         </Grid>
-        <!--TODO: Step 10: Add the grid and label for the app image-->
         <Grid
             Grid.Column="2" Grid.Row="2"
         >
@@ -215,7 +200,6 @@
                 Slick Draw
             </Label>
         </Grid>
-        <!--TODO: Step 11: Add the grid and label for the app image-->
         <Grid
             Grid.Column="3" Grid.Row="2"
         >

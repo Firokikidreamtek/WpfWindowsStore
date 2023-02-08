@@ -36,6 +36,7 @@ namespace WpfWindowsStore.Pages
             AppDetailsTitleAndBackgroundUC.BackButtonClicked += AppDetailsTitleAndBackgroundUC_BackButtonClicked;
 
             OverviewTabUC.AppClicked += OverviewTabUC_AppClicked;
+            RelatedTabUC.AppClicked += OverviewTabUC_AppClicked;
         }
 
         private void AppDetailsTitleAndBackgroundUC_BackButtonClicked(object sender, RoutedEventArgs e)

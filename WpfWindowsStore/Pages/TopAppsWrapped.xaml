@@ -18,7 +18,6 @@
             <ColumnDefinition Width="35"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <!--TODO: Step 2: Add back button and label -->
         <Button Name="BackButton"
                 Grid.Row="0"
                 Grid.Column="0"
@@ -37,8 +36,6 @@
             Content="Best selling apps" 
             FontSize="40" 
         />
-        <!--TODO: Step 3: Add ScrollViewer containing wrap panel-->
-        <!--GOTO: TopAppsWrapped.xaml.cs-->
         <ScrollViewer Name="TopAppsWrappedPageMainSV"
                       Width="{Binding ElementName=TopAppsWrappedPageMainGrid, Path=ActualWidth}"
                       Grid.Row="1"

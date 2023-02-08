@@ -9,7 +9,6 @@
              d:DesignHeight="450" d:DesignWidth="800"
              Name="RelatedUserControl"
     >
-    <!--TODO: Step 1: Add main stack panel -->
     <StackPanel 
             Orientation="Vertical"
             VerticalAlignment="Top" 
@@ -18,20 +17,14 @@
             Background="#2E2E2E"
             Width="{Binding ElementName=RelatedUserControl, Path=ActualWidth}"
     >
-        <!--TODO: Step 2: Add label describing AppsViewer -->
         <Label FontSize="25" Foreground="White" Margin="0,0,0,30">People also like</Label>
         <uc:AppsViewer x:Name="AppsViewer1" ></uc:AppsViewer>
-        <!--TODO: Step 3: Add label describing AppsViewer  -->
         <Label FontSize="25" Foreground="White" Margin="0,40,0,30">Top free games</Label>
         <uc:AppsViewer x:Name="AppsViewer2" ></uc:AppsViewer>
-        <!--TODO: Step 4: Add label describing AppsViewer -->
         <Label FontSize="25" Foreground="White" Margin="0,40,0,30">Top paid games</Label>
         <uc:AppsViewer x:Name="AppsViewer3" ></uc:AppsViewer>
-        <!--TODO: Step 5: Add label describing AppsViewer  -->
         <Label FontSize="25" Foreground="White" Margin="0,40,0,30">Best rated games</Label>
         <uc:AppsViewer x:Name="AppsViewer4" ></uc:AppsViewer>
-        <!--TODO: Step 6: Add label describing AppsViewer -->
-        <!--GOTO: AppDetails.xaml to display this user control -->
         <Label FontSize="25" Foreground="White" Margin="0,40,0,30">Best selling games</Label>
         <uc:AppsViewer x:Name="AppsViewer5" ></uc:AppsViewer>
     </StackPanel>

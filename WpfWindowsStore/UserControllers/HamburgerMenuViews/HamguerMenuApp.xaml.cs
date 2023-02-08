@@ -31,7 +31,6 @@ namespace WpfWindowsStore.UserControllers.HamburgerMenuViews
         public HamguerMenuApp()
         {
             InitializeComponent();
-            //TODO: Step 3: Initialize the all types list
             AppTypes = new List<string>()
             {
                 "Apps",
@@ -39,7 +38,6 @@ namespace WpfWindowsStore.UserControllers.HamburgerMenuViews
                 "Movies",
                 "Avatars",
             };
-            //TODO: Step 4: Same logic as before, choose an image randomly
             List<string> filepaths = Directory.GetFiles(Environment.CurrentDirectory + @"\..\..\Images\MiniIcons", "*.png").ToList<string>();
             FileInfo myRandomFile = new FileInfo(filepaths[StaticRandom.Next(filepaths.Count)]);
             AppImage.Source = new BitmapImage(new Uri(myRandomFile.FullName, UriKind.RelativeOrAbsolute));
@@ -48,13 +46,8 @@ namespace WpfWindowsStore.UserControllers.HamburgerMenuViews
                 AppImage.Source.ToString().Split('/').Last().Split('.').First().Split('-').Last().Split('.').First()
             );
             AppName = AppNameLabel.Content.ToString();
-            //TODO: Step 5: Choose a type randomly
             Type = AppTypes[StaticRandom.Next(AppTypes.Count)];
-            //TODO: Step 6: Choose a date randomly
             Purchased = new DateTime(2023, 1, StaticRandom.Next(1, DateTime.Now.Day + 1));
-            //TODO: Step 7: Set the label to the date purchased format d is DD/MM/YYYY 
-            //depending on the culture by default it's US culture
-            //GOTO: HambugerMenuAppList.xaml.cs
             PurchasedLabel.Content = "Purchased " + Purchased.ToString("d");
         }
     }

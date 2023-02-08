@@ -17,7 +17,6 @@
             Background="#2E2E2E"
             Width="{Binding ElementName=SystemRequirementsUserControl, Path=ActualWidth}"
     >
-        <!--TODO: Step 3: Add label and textblock -->
         <Label FontSize="25" Foreground="White">This product should work on this device on</Label>
         <TextBlock 
             FontSize="14" 
@@ -29,15 +28,10 @@
             Check the minimum requirements to be sure
         </TextBlock>
 
-        <!--TODO: Step 4: Add main grid -->
         <Grid Name="MainGrid"
               Margin="0,0,0,200"
         >
             <Grid.RowDefinitions>
-                <!--The difference between auto and * is 
-                Auto takes up the least space
-                * the maximum space
-                -->
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
@@ -45,7 +39,6 @@
                 <ColumnDefinition Width="0.5*"></ColumnDefinition>
                 <ColumnDefinition Width="0.5*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <!--TODO: Step 5: Add stack panel containing labels for minimum requirements -->
             <StackPanel Grid.Row="0" Grid.Column="0">
                 <Label HorizontalAlignment="Left"
                        Grid.Row="0"
@@ -64,7 +57,6 @@
                        Content="Your device must meet all requirements"
                 />
             </StackPanel>
-            <!--TODO: Step 6: Add minimum requirements grid -->
             <Grid Name="ReqMinGrid"
                   Grid.Row="1"
                   Grid.Column="0"
@@ -120,7 +112,6 @@
                     <Border BorderThickness="1" BorderBrush="White"></Border>
                 </StackPanel>
             </Grid>
-            <!--TODO: Step 7: Very similar to step 5 -->
             <StackPanel Grid.Row="0" Grid.Column="1">
                 <Label HorizontalAlignment="Left"
                        Grid.Row="0"
@@ -139,8 +130,6 @@
                        Content="Your device should meet all requirements"
                 />
             </StackPanel>
-            <!--TODO: Step 8: Very similar to step 6 -->
-            <!--GOTO: AppDeatils.xaml to display this UC-->
             <Grid Name="ReqRecommendedGrid"
                   Grid.Row="1"
                   Grid.Column="1"

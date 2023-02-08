@@ -43,9 +43,7 @@ namespace WpfWindowsStore.UserControllers
 
         private void TopAppsButton_Click(object sender, RoutedEventArgs e)
         {
-            //TODO: Step 14: Fire event when button is clicked
             TopAppButtonClicked(sender, e);
-            //GOTO: Main.xaml.cs
         }
     }
 }

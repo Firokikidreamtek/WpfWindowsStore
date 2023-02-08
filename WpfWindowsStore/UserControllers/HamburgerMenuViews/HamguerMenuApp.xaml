@@ -18,13 +18,11 @@
             <RowDefinition Height="64"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <!--TODO: Step 2: Add app image -->
         <Image  Name="AppImage"
                 Grid.Row="0" Grid.Column="0"  
                 Source="/Images/MiniIcons/spotify.png" 
                 Margin="4"
         />
-        <!--TODO: Step 3: Add app name label -->
         <Label  Name="AppNameLabel"
                 Grid.Row="0" Grid.Column="1" 
                 VerticalAlignment="Center"
@@ -33,21 +31,18 @@
                 FontSize="20"
                 Margin="4"
         />
-        <!--TODO: Step 4: Add purchased label -->
         <Label Name="PurchasedLabel"    
                Grid.Row="0" Grid.Column="2"
                VerticalAlignment="Center"
                Content="Purchased Today"
                Margin="4"
         />
-        <!--TODO: Step 5: Add install button -->
         <Button 
             Grid.Row="0" Grid.Column="3"   
             VerticalAlignment="Center"            
             Content="Install"
             Margin="4"
         />
-        <!--TODO: Step 5: Add other operation button -->
         <Button 
             Grid.Row="0" Grid.Column="4"   
             VerticalAlignment="Center"

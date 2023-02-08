@@ -10,9 +10,7 @@
                     HorizontalScrollBarVisibility="Hidden"
                     VerticalScrollBarVisibility="Hidden"
     >
-        <!--TODO: Step 2: Add Main stack panel-->
         <StackPanel>
-            <!--TODO: Step 3: Add the two user controls created in prev chapters-->
             <local:HamburgerMenuHeader x:Name="HamHeader"></local:HamburgerMenuHeader>
             <local:HambugerMenuAppList x:Name="HamAppsList"></local:HambugerMenuAppList>
         </StackPanel>

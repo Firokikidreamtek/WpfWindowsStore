@@ -16,7 +16,6 @@
             <ColumnDefinition Width="0.3*"></ColumnDefinition>
             <ColumnDefinition Width="0.7*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <!--TODO: Step 3: Add stack panel displayed on the left of this UC -->
         <StackPanel Grid.Column="0" 
                     Orientation="Horizontal"
         >
@@ -42,8 +41,6 @@
                 />
             </StackPanel>
         </StackPanel>
-        <!--TODO: Step 4: Add stack panel displayed on the right of this UC-->
-        <!--GOTO: Areview.xaml.cs-->
         <StackPanel Name="StarSP"
                     Grid.Column="1"
         >

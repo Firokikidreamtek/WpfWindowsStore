@@ -17,13 +17,11 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <!--Here we make 35 px room for the back button-->
             <ColumnDefinition Width="35"></ColumnDefinition>
             <ColumnDefinition Width="0.60*"></ColumnDefinition>
             <ColumnDefinition Width="0.40*"></ColumnDefinition>
             <ColumnDefinition Width="35"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <!--TODO: Step 3: Add tab control into corresponding grid-->
         <mah:MetroAnimatedSingleRowTabControl 
             x:Name="MainTabControl" 
             Visibility="Visible"
@@ -118,28 +116,20 @@
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
-            <!--TODO: Step 1: Add gaming tab-->
             <TabItem Header="Gaming">
-                <!--TODO: Step 2: Add stack panel -->
                 <StackPanel>
-                    <!--TODO: Step 3: Add label describing the list of apps -->
                     <Label 
                         HorizontalAlignment="Left"
                         Margin="10,10,10,10"
                         Content="Top free games" 
                         FontSize="40" 
                     />
-                    <!--TODO: Step 4: Add list of apps -->
                     <uc:AppsViewer x:Name="GamingAppsViewer"
                         Width="{Binding ElementName=MainTabControl, Path=ActualWidth}"
                         HorizontalAlignment="Left"
                     />
                 </StackPanel>
             </TabItem>
-            <!--TODO: Step 5: Add entertainment tab 
-            this is essentially the same as the gaming tab
-            only the lable is different
-            -->
             <TabItem Header="Entertainment">
                 <StackPanel>
                     <Label 
@@ -154,26 +144,19 @@
                     />
                 </StackPanel>
             </TabItem>
-            <!--TODO: Step 6: Add Productivity Tab 
-            This tab is very similar to the Home Screen
-            Possible can be made into a challange
-            -->
             <TabItem Header="Productivity">
                 <ScrollViewer Name="MainProductivitySV"
                     Margin="10"
                     HorizontalScrollBarVisibility="Hidden"
                     VerticalScrollBarVisibility="Hidden"
                 >
-                    <!--TODO: Step 7: Main stack panel -->
                     <StackPanel Name="MainProductivitySP"
                                 Width="{Binding ElementName=MainProductivitySV, Path=ActualWidth}"
                     >
-                        <!--TODO: Step 8: Add ProductivityTopApps user control -->
                         <uc:ProductivityTopApps x:Name="ProductivityTopApps"
                             Width="{Binding ElementName=MainProductivitySP, Path=ActualWidth}"
                         />
 
-                        <!--TODO: Step 9: Add the rest of the labels and app viewers -->
                         <Label 
                             HorizontalAlignment="Left"
                             Margin="10,10,10,10"
@@ -209,7 +192,6 @@
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
-            <!--TODO: Step 10: Add Deals tab, very similar to games tab -->
             <TabItem Header="Deals">
                 <StackPanel>
                     <Label 

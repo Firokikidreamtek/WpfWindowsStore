@@ -132,7 +132,6 @@
                             <RowDefinition />
                         </Grid.RowDefinitions>
                         <Border Grid.Row="0">
-                            <!--TODO: Step 9: Add the title of the Content-->
                             <TextBlock  x:Name="Header"
                                         HorizontalAlignment="Center"
                                         VerticalAlignment="Center"
@@ -140,12 +139,6 @@
                                         Text="{Binding Label}" 
                             />
                         </Border>
-                        <!--TODO: Step 10: Add the TransitioningContentControl
-                        Here and in the CS file is HamburgerMenuControl_OnItemInvoked
-                        is where the magic happens. The content of this is defined
-                        by the tag. The tags are set up step 8
-                        GOTO: DownloadsAndUpdates.xaml.cs
-                        -->
                         <mah:TransitioningContentControl x:Name="TheContent"
                                                          Grid.Row="1"
                                                          Focusable="False"

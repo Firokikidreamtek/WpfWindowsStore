@@ -126,7 +126,6 @@
             MouseUp="Image_MouseUp"
         >
         </Image>
-        <!--TODO: Step 4: Add canvas in order to blur effect-->
         <Canvas
             Grid.Column="0" Grid.Row="0"
             Grid.ColumnSpan="4"
@@ -135,7 +134,6 @@
             Background="#2E2E2E"
             IsHitTestVisible="False"
         />
-        <!--TODO: Step 5: Add grid containing app label -->
         <Grid
             Grid.Column="0" Grid.Row="0"
             Grid.ColumnSpan="3"
@@ -157,7 +155,6 @@
                 Tropical
             </Label>
         </Grid>
-        <!--TODO: Step 6: Add grid containing app label -->
         <Grid
             Grid.Column="3" 
             Grid.Row="0"
@@ -178,7 +175,6 @@
                 Circus Fun
             </Label>
         </Grid>
-        <!--TODO: Step 7: Add grid containing app label -->
         <Grid
             Grid.Column="3" 
             Grid.Row="1"
@@ -199,7 +195,6 @@
                 Race Extreem
             </Label>
         </Grid>
-        <!--TODO: Step 8: Add grid containing app label -->
         <Grid
             Grid.Column="2" Grid.Row="2"
         >
@@ -225,7 +220,6 @@
                 Night Castle
             </Label>
         </Grid>
-        <!--TODO: Step 9: Add grid containing app label -->
         <Grid
             Grid.Column="3" Grid.Row="2"
         >

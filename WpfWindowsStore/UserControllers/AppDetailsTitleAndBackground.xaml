@@ -47,7 +47,6 @@
                 <ColumnDefinition Width="0.60*"></ColumnDefinition>
                 <ColumnDefinition Width="0.22*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <!--TODO: Step 5: Add app icon-->
             <Image Name="AppImage"
                    Grid.Row="0"
                    Grid.Column="0"
@@ -56,7 +55,6 @@
                    Stretch="Uniform"
                    Margin="15"
             />
-            <!--TODO: Step 6: Add stack panel containing description labels-->
             <StackPanel Name="MiddleStackPanel" 
                         Grid.Row="0"
                         Grid.Column="1"
@@ -80,8 +78,6 @@
                                 aliquip ex ea commodo consequat
                 </TextBlock>
             </StackPanel>
-            <!--TODO: Step 7: Add stack panel containing price 
-            GOTO: MainWindow.xaml and display this current UC -->
             <StackPanel Name="RightStackPanel" 
                         Grid.Row="0" Grid.Column="2" 
                         Margin="15"

@@ -58,10 +58,6 @@ namespace WpfWindowsStore.UserControllers
 
         private void AppsScrollView_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
         {
-            //These are the neccesary steps that forward the event to the parent scroll viewer
-            //RaiseEvent is what does the magic
-            //Now since we did it here any view that uses this user control will scroll nicely
-            //It is not neccesary to change anything in any other parts of the application
             e.Handled = true;
             var eventArg = new MouseWheelEventArgs(e.MouseDevice, e.Timestamp, e.Delta);
             eventArg.RoutedEvent = UIElement.MouseWheelEvent;

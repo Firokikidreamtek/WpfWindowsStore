@@ -35,11 +35,7 @@ namespace WpfWindowsStore.Pages
             {
                 AnApp currAnApp = new AnApp();
                 currAnApp.AppClicked += CurrAnApp_AppClicked;
-
-
                 TopAppsWrappedPageMainWrapPanel.Children.Add(currAnApp);
-
-
             }
 
         }
@@ -57,10 +53,6 @@ namespace WpfWindowsStore.Pages
         {
             if (e.VerticalChange > 0)
             {
-                //This adjustment is used in order to be ahead of the bottom
-                //So the user does not have to scrool all the way down
-                //new element will be populated before it reaches the end
-                //this is want achives this infinite scrolling behaviour
                 int adjustment = 400;
                 if (e.VerticalOffset + e.ViewportHeight + adjustment >= e.ExtentHeight)
                 {

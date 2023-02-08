@@ -10,12 +10,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
-        <!--TODO: Step 2: Add stack panel -->
         <StackPanel 
             Orientation="Horizontal"
             Grid.Row="0"
             >
-            <!--TODO: Step 3: Add sort by type Menu with Menu items -->
             <Menu   Name="SortByTypeMenu"
                     Margin="5"
                     Width="350"
@@ -23,8 +21,6 @@
             >
                 <MenuItem Name="Types" Width="350">
                     <MenuItem.Header>
-                        <!--TODO: Step 4: Add this grid here
-                        so it's easy to force the arrow to the left side -->
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="0.85*"></ColumnDefinition>
@@ -34,7 +30,6 @@
                             <Label Grid.Column="1" HorizontalAlignment="Right">﹀</Label>
                         </Grid>
                     </MenuItem.Header>
-                    <!--TODO: Step 5: Add menu items with their respective click events-->
                     <MenuItem Width="350"  Name="AllTypesMenuItem" Click="Filter_MenuItem_Click"  Header="All types" />
                     <MenuItem Width="350"  Name="AppsMenuItem"     Click="Filter_MenuItem_Click"  Header="Apps"      />
                     <MenuItem Width="350"  Name="GamesMenuItem"    Click="Filter_MenuItem_Click"  Header="Games"     />
@@ -42,9 +37,6 @@
                     <MenuItem Width="350"  Name="AvetarsMenuItem"  Click="Filter_MenuItem_Click"  Header="Avatars"   />
                 </MenuItem>
             </Menu>
-            <!--TODO: Step 6: Add sort by date Menu with Menu items 
-            basically the same as the above menu with less menu items 
-            GOTO: HamburgerMenuHeader.xaml.cs -->
             <Menu   Name="SortByDateMenu"
                     Margin="5"
                     Width="350"

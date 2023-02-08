@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace WpfWindowsStore.UserControllers.HamburgerMenuViews
 {
-    
-
-
     public partial class HamburgerMenuHeader : UserControl
     {
         public delegate void OnFilterMenuItemClicked(object sender, RoutedEventArgs e);
